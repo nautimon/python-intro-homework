@@ -1,4 +1,4 @@
-tempf = int(input("Enter a temperature in Fahrenheit: "))
+tempf = float(input("Enter a temperature in Fahrenheit: "))
 celsius = (tempf - 32) * 5 / 9
 
-print(f"{tempf}ºF is {celsius:.1f}ºC.")
+print(f"{tempf}°F is {celsius:.1f}°C.")
