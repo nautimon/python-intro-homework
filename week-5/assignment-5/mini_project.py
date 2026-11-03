@@ -5,6 +5,15 @@ menu = ("""=== Number Cruncher ===
 3. Search for a number
 4. Sort the list
 5. Quit""")
+def bubble_sort(numbers):
+            swapped = True
+            while swapped:
+                swapped = False
+                for i in range(len(numbers) - 1):
+                    if numbers[i] > numbers[i + 1]:
+                        numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
+                        swapped = True
+            return numbers
 
 
 while True:
@@ -36,15 +45,6 @@ while True:
             print(f"Number was not found.")
 
     if user_choice == 4:
-        def bubble_sort(numbers):
-            swapped = True
-            while swapped:
-                swapped = False
-                for i in range(len(numbers) - 1):
-                    if numbers[i] > numbers[i + 1]:
-                        numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
-                        swapped = True
-            return numbers
         bubble_sort(numbers)
         print(numbers)
 
