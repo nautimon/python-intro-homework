@@ -7,6 +7,6 @@ def is_valid_score(score):
         return True
 
 if is_valid_score(score):
-    print("Valid score")
+    print("Valid score.")
 else:
-    print("Invalid score - must be between 0 and 100")
+    print("Invalid score — must be between 0 and 100.")
