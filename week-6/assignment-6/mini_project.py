@@ -33,7 +33,7 @@ def bubble_sort(numbers):
     return sorted_numbers
 
 def show_menu():
-    menu = ("""===Number Cruncher ==="
+    menu = ("""===Number Cruncher ===
     1. Find minimum
     2. Find maximum
     3. Search for a number
